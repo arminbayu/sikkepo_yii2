@@ -1,0 +1,228 @@
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#origin-center-marker {
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -15px;
+    z-index: 2;
+    display: none;
+    background: url(cordova/img/blue-marker.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#destination-center-marker {
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -15px;
+    z-index: 2;
+    display: none;
+    background: url(cordova/img/red-marker.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#button-panel {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+}
+#current-position-button {
+    display: block;
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background: url(cordova/img/location.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#done-button {
+    position: absolute;
+    display: none;
+    left: 20%;
+    bottom: 20px;
+    z-index: 2;
+    width: 60%;
+    height: 40px;
+    background: rgba(0, 0, 0, 1);
+    color: #ffffff;
+    text-align: center;
+}
+#request-button {
+    position: absolute;
+    display: none;
+    left: 25%;
+    top: 10px;
+    width: 50%;
+    height: 40px;
+    background: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+#order-button {
+    position: absolute;
+    display: none;
+    right: 10px;
+    top: 10px;
+    width: 25%;
+    height: 40px;
+    background: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+#main-info {
+    position: absolute;
+    bottom: 100px;
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: rgba(76, 175, 80, 0.5);
+}
+#info {
+    width: 60%;
+    height: 30px;
+    color: #000000;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 40px;
+    display: none;
+}
+#info-price {
+    width: 60%;
+    height: 30px;
+    color: #ff0000;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 28px;
+    display: none;
+}
+#panel {
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    width: 100%;
+    background: rgba(245, 245, 245, 0);
+}
+
+#menu {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: 5%;
+}
+#refresh {
+    position: absolute;
+    display: block;
+    right: 5%;
+}
+#back {
+    position: absolute;
+    display: none;
+    left: 5%;
+}
+#search {
+    width: 90%;
+    /*height: 80px;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#sidebar {
+    position: fixed;
+    display: inline-block;
+    z-index: 3;
+    top: 0px;
+    height: 100%;
+    width: 200px;
+    right: -200px;
+    background: rgba(0, 0, 0, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: none;
+    border: 0px solid #f00;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group-addon,
+.input-group .form-control {
+    display: table-cell;
+}
+
+.input-group-addon {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 0;
+    text-align: center;
+    border: 0px solid #f00;
+    border-radius: 0;
+    color: #ddd;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.qmnoprint: not(.gm-bundled-control) {
+    display: none;
+}
+.gm-bundled-control .qmnoprint {
+    display: block;
+}
+a[href^="http://maps.google.com/maps"] {
+    display: none !important
+}
+a[href^="https://maps.google.com/maps"] {
+    display: none !important
+}
+a[href^="https://www.google.com/maps"] {
+    display: none !important
+}
