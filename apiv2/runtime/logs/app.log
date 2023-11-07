@@ -1,0 +1,72 @@
+2023-11-07 04:17:46 [::1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: token in /opt/lampp/htdocs/sikkepo_yii2/vendor/yiisoft/yii2/web/Controller.php:199
+Stack trace:
+#0 /opt/lampp/htdocs/sikkepo_yii2/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /opt/lampp/htdocs/sikkepo_yii2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 /opt/lampp/htdocs/sikkepo_yii2/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#3 /opt/lampp/htdocs/sikkepo_yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#4 /opt/lampp/htdocs/sikkepo_yii2/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /opt/lampp/htdocs/sikkepo_yii2/apiv2/web/index.php(19): yii\base\Application->run()
+#6 {main}
+2023-11-07 04:17:46 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.541801118.1643251010'
+    'advanced-keuangan' => 'iubvjddcudbhjrso4hgg626d10'
+    '_csrf-keuangan' => 'a01c2e9166b15482912433e9e6cabc9ad3aa0d52bd965f470bbae5e7c26e60d4a:2:{i:0;s:14:\"_csrf-keuangan\";i:1;s:32:\"I03w-hINB2IwlA8d2KD6R9Y5MUsQvzr4\";}'
+    'advanced-pegawai' => 'c0t7taho0anqjjf6iiqtgq5m2o'
+    '_csrf-pegawai' => '892b39343af73fc98ebbf32ee4b701773542a77393597714b07a90b7d30f8c9da:2:{i:0;s:13:\"_csrf-pegawai\";i:1;s:32:\"0ixJUT7eRNcSFqYWJj78NxJImvAnth3I\";}'
+    'advanced-unit' => 'nmuh9spag7lhch08jag6i7mhg8'
+    '_csrf-unit' => '0cf4096d809fdd770e69e1b2fdff76f598f4f77a0d3986430ab788e41ba8865da:2:{i:0;s:10:\"_csrf-unit\";i:1;s:32:\"Ka0r-fETIiCojB1sHtpbc0q_uOzasFdO\";}'
+    'advanced-admin' => 'rpgemve1me5607p88b8j2j4e4h'
+    '_csrf-admin' => '4c80b2a47d6f979ab39ae5a914131182affdb390fa94a001f31c0e12405bd811a:2:{i:0;s:11:\"_csrf-admin\";i:1;s:32:\"ywVkYiatukbwqD09uVWO4iVQyRIBIFbO\";}'
+    'advanced-frontend' => '33p4qgec8i158melk1qa6b3tqp'
+    '_csrf-frontend' => '3a12cd5e4cb56c24c19ab146999c1182239d2d578039093cdfa149b316fd57fca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CfINuWhryzstk7GEJYl1cSgl3WxZOC7F\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'ZUmsWltXRZc3L4CVL7ZYBQAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_REFERER' => 'http://localhost/sikkepo_yii2/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.541801118.1643251010; advanced-keuangan=iubvjddcudbhjrso4hgg626d10; _csrf-keuangan=a01c2e9166b15482912433e9e6cabc9ad3aa0d52bd965f470bbae5e7c26e60d4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-keuangan%22%3Bi%3A1%3Bs%3A32%3A%22I03w-hINB2IwlA8d2KD6R9Y5MUsQvzr4%22%3B%7D; advanced-pegawai=c0t7taho0anqjjf6iiqtgq5m2o; _csrf-pegawai=892b39343af73fc98ebbf32ee4b701773542a77393597714b07a90b7d30f8c9da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-pegawai%22%3Bi%3A1%3Bs%3A32%3A%220ixJUT7eRNcSFqYWJj78NxJImvAnth3I%22%3B%7D; advanced-unit=nmuh9spag7lhch08jag6i7mhg8; _csrf-unit=0cf4096d809fdd770e69e1b2fdff76f598f4f77a0d3986430ab788e41ba8865da%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_csrf-unit%22%3Bi%3A1%3Bs%3A32%3A%22Ka0r-fETIiCojB1sHtpbc0q_uOzasFdO%22%3B%7D; advanced-admin=rpgemve1me5607p88b8j2j4e4h; _csrf-admin=4c80b2a47d6f979ab39ae5a914131182affdb390fa94a001f31c0e12405bd811a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf-admin%22%3Bi%3A1%3Bs%3A32%3A%22ywVkYiatukbwqD09uVWO4iVQyRIBIFbO%22%3B%7D; advanced-frontend=33p4qgec8i158melk1qa6b3tqp; _csrf-frontend=3a12cd5e4cb56c24c19ab146999c1182239d2d578039093cdfa149b316fd57fca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CfINuWhryzstk7GEJYl1cSgl3WxZOC7F%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.0.28 mod_perl/2.0.12 Perl/v5.34.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/sikkepo_yii2/apiv2/web/index.php'
+    'REMOTE_PORT' => '60690'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/sikkepo_yii2/apiv2/web/'
+    'SCRIPT_NAME' => '/sikkepo_yii2/apiv2/web/index.php'
+    'PHP_SELF' => '/sikkepo_yii2/apiv2/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1699327066.7669
+    'REQUEST_TIME' => 1699327066
+]
