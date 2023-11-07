@@ -29,6 +29,6 @@ class DatePickerAsset extends AssetBundle
     ];
 
     public $depends = [
-        'yii\bootstrap\BootstrapPluginAsset'
+        'yii\bootstrap5\BootstrapPluginAsset'
     ];
 } 
